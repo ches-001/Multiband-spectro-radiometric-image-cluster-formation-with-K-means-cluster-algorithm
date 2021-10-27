@@ -17,7 +17,7 @@ The algorithm is then trained on the extracted features and forms 60 different c
 
 <h1>Features</h1>
 
-<h4>NDVI:</h4>
+<h4>NDVI (Normalized Differential Vegetative Index):</h4>
 <p>The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
 It is basically how much RED light energy from the visible light spectrum is absorbed by the plant and how much NIR (near-infrared rays) it emmits.<br>
 Healthy vegetation absorbs red-light energy to fuel photosynthesis and create chlorophyll, and a plant with more chlorophyll will reflect more near-infrared energy than an unhealthy plant.<br> 
@@ -26,10 +26,10 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 <p>
 The mathematical expression for NDVI is:<br>
 <strong>NDVI = (NIR - RED) / (NIR + RED)</strong>
-</p>
+</p><br>
 
 
-<h4>PV:</h4>
+<h4>PV (Portion of Vegetation):</h4>
 <p>
 Portion of Vegetation is the ratio of the vertical projection area of vegetation on the ground to the total vegetation area
 </p>
@@ -38,10 +38,10 @@ The mathematical expression for PV is:<br>
 <strong>PV = (NDVI - NDVImin) / (NDVImin + NDVImax)</strong><br>
 NDVImin is the minimum NDVI value a pixel holds in a single image<br>
 NDVImin is the maximum NDVI value a pixel holds in a single image
-</p>
+</p><br>
 
 
-<h4>LST:</h4>
+<h4>LST (Land Surface Temperature):</h4>
 <p>
 Land Surface Temperature is the radiative temperature / intensity of the land surface
 </p>
