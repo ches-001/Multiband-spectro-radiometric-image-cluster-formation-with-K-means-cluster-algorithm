@@ -1,0 +1,5 @@
+numpy
+sklearn
+pandas
+pickle
+rasterio
