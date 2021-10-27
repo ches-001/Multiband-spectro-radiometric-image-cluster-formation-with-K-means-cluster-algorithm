@@ -1,6 +1,6 @@
 <h1>Multi-band Spectro Radiomertric Image Analysis with K-means Cluster Algorithm </h1>
 
-<h3>Overview</h3>
+<h3 style="color:blue;">Overview</h3>
 
 <p>Multi-band Spectro Radiomertric images are images comprising of several channels / bands which hold information on band energy in each pixel.<br>
 The most common multi band channels are the RGB (Red Green Blue) channels of the visible light spectrum.</p>
@@ -15,9 +15,9 @@ The algorithm is then trained on the extracted features and forms 60 different c
 <p>These centroids will be futher studied to learn what NDVI, PV and LST combinations a geograhical location might need to have for the occurence and spread of wild fire to be highly probable.</p>
 <br><br>
 
-<h1>Features</h1>
+<h1 style="color:blue;">Features</h1>
 
-<h4>NDVI (Normalized Differential Vegetative Index):</h4>
+<h4 style="color:yellow;">NDVI (Normalized Differential Vegetative Index):</h4>
 <p>The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
 It is basically how much RED light energy from the visible light spectrum is absorbed by the plant and how much NIR (near-infrared rays) it emmits.<br>
 Healthy vegetation absorbs red-light energy to fuel photosynthesis and create chlorophyll, and a plant with more chlorophyll will reflect more near-infrared energy than an unhealthy plant.<br> 
@@ -29,7 +29,7 @@ The mathematical expression for NDVI is:<br>
 </p><br>
 
 
-<h4>PV (Portion of Vegetation):</h4>
+<h4 style="color:yellow;">PV (Portion of Vegetation):</h4>
 <p>
 Portion of Vegetation is the ratio of the vertical projection area of vegetation on the ground to the total vegetation area
 </p>
@@ -41,7 +41,7 @@ NDVImin is the maximum NDVI value a pixel holds in a single image
 </p><br>
 
 
-<h4>LST (Land Surface Temperature):</h4>
+<h4 style="color:yellow;">LST (Land Surface Temperature):</h4>
 <p>
 Land Surface Temperature is the radiative temperature / intensity of the land surface
 </p>
@@ -73,7 +73,7 @@ Rs=(0.99782 + (0.05362*PV))<br>
 </p>
 <br><br>
 
-<h3>Dependencies</h3>
+<h3 style="color:blue;">Dependencies</h3>
 <ul>
 <li>Rasterio</li>
 <li>Numpy</li>
@@ -81,6 +81,7 @@ Rs=(0.99782 + (0.05362*PV))<br>
 <li>Sklearn</li>
 <li>Pickle</li>
 </ul>
+<br><br>
 
-<h3>Setup</h3>
+<h3 style="color:blue;">Setup</h3>
 clone the repository and download the 'requirement.txt' files, then open terminal in the working directory and  type <h5>'pip install -r requirements.txt'<h5> to install all the requirements for this project.
