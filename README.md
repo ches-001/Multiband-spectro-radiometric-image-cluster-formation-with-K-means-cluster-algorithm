@@ -1,6 +1,6 @@
 <h1>Multi-band Spectro Radiomertric Image Analysis with K-means Cluster Algorithm </h1>
 
-<h3 style="color:blue;">Overview</h3>
+<h2 style="color:blue;">Overview</h2>
 
 <p>Multi-band Spectro Radiomertric images are images comprising of several channels / bands which hold information on band energy in each pixel.<br>
 The most common multi band channels are the RGB (Red Green Blue) channels of the visible light spectrum.</p>
@@ -15,7 +15,7 @@ The algorithm is then trained on the extracted features and forms 60 different c
 <p>These centroids are stored in the "ouput" folder and will be futher studied to learn what NDVI, PV and LST combinations a geograhical location might need to have for the occurence and spread of wild fire to be highly probable.</p>
 <br><br>
 
-<h1 style="color:blue;">Features</h1>
+<h2 style="color:blue;">Features</h2>
 
 <h4 style="color:yellow;">NDVI (Normalized Differential Vegetative Index):</h4>
 <p>The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
@@ -73,7 +73,7 @@ Rs=(0.99782 + (0.05362*PV))<br>
 </p>
 <br><br>
 
-<h3 style="color:blue;">Dependencies</h3>
+<h2 style="color:blue;">Dependencies</h2>
 <ul>
 <li>Rasterio</li>
 <li>Numpy</li>
@@ -83,5 +83,5 @@ Rs=(0.99782 + (0.05362*PV))<br>
 </ul>
 <br><br>
 
-<h3 style="color:blue;">Setup</h3>
-clone the repository and download the 'requirement.txt' files, then open terminal in the working directory and  type <h5>'pip install -r requirements.txt'<h5> to install all the requirements for this project.
+<h2 style="color:blue;">Setup</h2>
+clone the repository and download the 'requirement.txt' files, then open terminal in the working directory and  type <strong>'pip install -r requirements.txt'<strong> to install all the requirements for this project.
