@@ -12,7 +12,7 @@ The most common multi band channels are the RGB (Red Green Blue) channels of the
 <p>The K-means cluster algorithm is initialized and the "number of clusters" hyper-parameter is set to 60.
 The algorithm is then trained on the extracted features and forms 60 different clusters represented by each of the 60 centroids.</p>
 
-<p>These centroids will be futher studied to learn what NDVI, PV and LST combinations a geograhical location might need to have for the occurence and spread of wild fire to be highly probable.</p>
+<p>These centroids are stored in the "ouput" folder and will be futher studied to learn what NDVI, PV and LST combinations a geograhical location might need to have for the occurence and spread of wild fire to be highly probable.</p>
 <br><br>
 
 <h1 style="color:blue;">Features</h1>
