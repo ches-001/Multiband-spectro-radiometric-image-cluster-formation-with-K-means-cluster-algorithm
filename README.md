@@ -5,7 +5,7 @@
 <p>Multi-band Spectro Radiomertric images are images comprising of several channels / bands which hold information on band energy in each pixel.<br>
 The most common multi band channels are the RGB (Red Green Blue) channels of the visible light spectrum.</p>
 
-<p>The images used are LANDSAT 8 satellite images and each image consist of three bands, namely: Thermal Infrared, Red and Near infrared bands.</p>
+<p>The images used are LANDSAT 8 satellite images and each image consist of three bands, namely: Thermal Infrared, Red and Near infrared bands corresponding to band 10, band 4 and band 5 of LANDSAT 8 satellite imagery with wavelengths of 10.895µm, 0.655µm and 0.865µm respectively.</p>
 
 <p>Each pixel in each bands of each image are used to compute three features namely: NDVI (Normalized Differential Vegetative Index), PV (Portion of Vegetation) and LST (Land Surface Temperature).</p>
 
