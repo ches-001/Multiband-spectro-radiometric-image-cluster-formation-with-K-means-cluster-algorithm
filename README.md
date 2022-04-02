@@ -10,7 +10,7 @@ The most common multi band channels are the RGB (Red Green Blue) channels of the
 <p>Each pixel in each bands of each image are used to compute three features namely: NDVI (Normalized Differential Vegetative Index), PV (Portion of Vegetation) and LST (Land Surface Temperature).</p>
 
 <p>The K-means cluster algorithm is initialized and the "number of clusters" hyper-parameter is set to 60.
-The algorithm is then trained on the extracted features and forms 60 different clusters represented by each of the 60 centroids.</p>
+The algorithm then trains on the extracted features and forms 60 different clusters represented by each of the 60 centroids.</p>
 
 <p>These centroids are stored in the "ouput" folder and <strong>will be futher studied to learn what NDVI, PV and LST combinations a geograhical location might need to have for the occurence and spread of wild fire to be highly probable</strong>.</p>
 <br><br>
