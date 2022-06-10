@@ -35,7 +35,7 @@ Portion of Vegetation is the ratio of the vertical projection area of vegetation
 </p>
 <p>
 The mathematical expression for PV is:<br>
-<strong>PV = (NDVI - NDVImin) / (NDVImin + NDVImax)</strong><br>
+$$PV = (NDVI - NDVImin) / (NDVImin + NDVImax)$$<br>
 NDVImin is the minimum NDVI value a pixel holds in a single image<br>
 NDVImin is the maximum NDVI value a pixel holds in a single image
 </p><br>
