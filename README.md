@@ -23,7 +23,7 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 
 The mathematical expression for NDVI is:
 $$ NDVI = (NIR - RED) / (NIR + RED) $$
-
+<br><br><br>
 
 
 
@@ -34,7 +34,7 @@ The mathematical expression for PV is:
 $$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
 NDVImin is the minimum NDVI value a pixel holds in a single image
 NDVImin is the maximum NDVI value a pixel holds in a single image
-
+<br><br><br>
 
 
 
@@ -66,6 +66,7 @@ $$ Es (Soil Emissivity) of location = 0.973 $$
 $$ C (topography factor) of location = 0.0001 $$
 $$ Rv = (0.92762 + (0.07033*PV)) $$
 $$ Rs = (0.99782 + (0.05362*PV)) $$
+<br><br><br>
 
 
 
@@ -77,6 +78,8 @@ $$ Rs = (0.99782 + (0.05362*PV)) $$
 <li>Sklearn</li>
 <li>Pickle</li>
 </ul>
+<br><br><br>
+
 
 
 ## Setup
