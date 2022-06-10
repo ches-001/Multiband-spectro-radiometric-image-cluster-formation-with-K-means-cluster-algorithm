@@ -16,7 +16,6 @@ These centroids are stored in the "ouput" folder and will be futher studied to l
 ## Features
 
 ### NDVI (Normalized Differential Vegetative Index):
-
 The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
 It is basically how much RED light energy from the visible light spectrum is absorbed by the plant and how much NIR (near-infrared rays) it emmits.<br>
 Healthy vegetation absorbs red-light energy to fuel photosynthesis and create chlorophyll, and a plant with more chlorophyll will reflect more near-infrared energy than an unhealthy plant.
@@ -26,16 +25,14 @@ The mathematical expression for NDVI is:
 $$ NDVI = (NIR - RED) / (NIR + RED) $$
 
 
+
 ### PV (Portion of Vegetation):
-
 Portion of Vegetation is the ratio of the vertical projection area of vegetation on the ground to the total vegetation area
-
 The mathematical expression for PV is:
 $$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
-
 NDVImin is the minimum NDVI value a pixel holds in a single image
-
 NDVImin is the maximum NDVI value a pixel holds in a single image
+
 
 
 ### LST (Land Surface Temperature):
@@ -43,15 +40,12 @@ Land Surface Temperature is the radiative temperature / intensity of the land su
 
 The mathematical expression for LST is:
 $$ LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) ) $$
-
-
 **BT** is brighness Temperature in celcius and is mathematically expressed as:
 $$ BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15 $$
 where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 
-
 **TOA** (Top of Atmosphere) Reflectance is a unitless measurement which provides the ratio of radiation reflected to the incident solar radiation on a given surface.
-  
+
 It is mathematically expressed as:
 $$ TOA = ML * TIR + Al $$
 where ML and Al are landsat 8 constants 3.42E-4 and 0.1 respectively.
