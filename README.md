@@ -25,7 +25,7 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 </p>
 <p>
 The mathematical expression for NDVI is:<br>
-$$NDVI = (NIR - RED) / (NIR + RED)$$
+$$ NDVI = (NIR - RED) / (NIR + RED) $$
 </p><br>
 
 
@@ -35,7 +35,7 @@ Portion of Vegetation is the ratio of the vertical projection area of vegetation
 </p>
 <p>
 The mathematical expression for PV is:<br>
-$$PV = (NDVI - NDVImin) / (NDVImin + NDVImax)$$<br>
+$$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$<br>
 NDVImin is the minimum NDVI value a pixel holds in a single image<br>
 NDVImin is the maximum NDVI value a pixel holds in a single image
 </p><br>
@@ -47,29 +47,29 @@ Land Surface Temperature is the radiative temperature / intensity of the land su
 </p>
 <p>
 The mathematical expression for LST is:<br>
-<strong>LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) )</strong><br>
+$$ LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) ) $$<br>
 
 **BT** is brighness Temperature in celcius and is mathematically expressed as:<br>
-**BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15**<br>
+$$ BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15 $$<br>
 where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively<br><br>
 
 **TOA** (Top of Atmosphere) Reflectance is a unitless measurement which provides the ratio of radiation reflected to the incident solar radiation on a given surface.<br>
 It is mathematically expressed as:<br>
-**TOA = ML * TIR + Al**<br>
+$$ TOA = ML * TIR + Al $$<br>
 where ML and Al are landsat 8 constants 3.42E-4 and 0.1 respectively.<br><br>
 
 **p** is mathematically expressed as:<br>
-**p = hc/A**<br>
+$$ p = hc/A $$<br>
 where h, c and a are plank's constant, speed of light and boltzmann constant respectively<br><br>
 
 **E** is emissivity of the land surface and is mathematically expressed as:<br>
-**( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C**<br>
+$$ ( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C $$<br>
 where:<br>
-Ev (Vegitation Emissivity) of location = 0.986<br>
-Es (Soil Emissivity) of location = 0.973<br>
-C (topography factor) of location = 0.0001<br>
-Rv =(0.92762 + (0.07033*PV))<br>
-Rs=(0.99782 + (0.05362*PV))<br>
+$$ Ev (Vegitation Emissivity) of location = 0.986 $$<br>
+$$ Es (Soil Emissivity) of location = 0.973 $$<br>
+$$ C (topography factor) of location = 0.0001 $$<br>
+$$ Rv =(0.92762 + (0.07033*PV)) $$<br>
+$$ Rs=(0.99782 + (0.05362*PV)) $$<br>
 </p>
 <br><br>
 
