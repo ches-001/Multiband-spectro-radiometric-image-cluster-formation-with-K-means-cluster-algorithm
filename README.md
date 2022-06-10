@@ -25,7 +25,7 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 </p>
 <p>
 The mathematical expression for NDVI is:<br>
-<strong>NDVI = (NIR - RED) / (NIR + RED)</strong>
+$$NDVI = (NIR - RED) / (NIR + RED)$$
 </p><br>
 
 
