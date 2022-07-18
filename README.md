@@ -44,11 +44,11 @@ Land Surface Temperature is the radiative temperature / intensity of the land su
 
 The mathematical expression for LST is:
 
-$ LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) ) $
+$LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) )$
 
 **BT** is brighness Temperature in celcius and is mathematically expressed as:
 
-$ BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15 $
+$BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15$
 
 where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 
