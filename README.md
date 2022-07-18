@@ -56,27 +56,27 @@ where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 
 It is mathematically expressed as:
 
-$ TOA = ML * TIR + Al $
+$TOA = ML * TIR + Al$
 
 where ML and Al are landsat 8 constants 3.42E-4 and 0.1 respectively.
 
 **p** is mathematically expressed as:
 
-$ p = hc/A $
+$p = hc/A$
 
 where h, c and a are plank's constant, speed of light and boltzmann constant respectively
 
 **E** is emissivity of the land surface and is mathematically expressed as:
 
-$ ( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C $
+$( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C$
 
 where:
 
-$ Ev (Vegitation Emissivity) of location = 0.986 $
-$ Es (Soil Emissivity) of location = 0.973 $
-$ C (topography factor) of location = 0.0001 $
-$ Rv = (0.92762 + (0.07033*PV)) $
-$ Rs = (0.99782 + (0.05362 * PV)) $
+$Ev (Vegitation Emissivity) of location = 0.986$
+$Es (Soil Emissivity) of location = 0.973$
+$C (topography factor) of location = 0.0001$
+$Rv = (0.92762 + (0.07033*PV))$
+$Rs = (0.99782 + (0.05362 * PV))$
 
 <br><br><br>
 
