@@ -23,7 +23,7 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 
 The mathematical expression for NDVI is:
 $$ NDVI = (NIR - RED) / (NIR + RED) $$
-$$ Ldc = 1 - [2 * (Y n X) / (Y + X)] $$
+
 <br><br><br>
 
 
@@ -35,6 +35,7 @@ The mathematical expression for PV is:
 $$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
 NDVImin is the minimum NDVI value a pixel holds in a single image
 NDVImin is the maximum NDVI value a pixel holds in a single image
+
 <br><br><br>
 
 
