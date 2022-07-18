@@ -1,5 +1,7 @@
 # Multi-band Spectro Radiomertric Image Analysis with K-means Cluster Algorithm
 
+$$ Lbce = y * log(x) + (1 - y) * log(1 - x) $$
+
 Multi-band Spectro Radiomertric images are images comprising of several channels / bands which hold information on band energy in each pixel.
 The most common multi band channels are the RGB (Red Green Blue) channels of the visible light spectrum.
 
