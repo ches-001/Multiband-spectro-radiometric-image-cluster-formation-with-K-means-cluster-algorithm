@@ -29,6 +29,7 @@ $$ NDVI = (NIR - RED)/(NIR + RED) $$
 ### PV (Portion of Vegetation):
 Portion of Vegetation is the ratio of the vertical projection area of vegetation on the ground to the total vegetation area
 The mathematical expression for PV is:
+
 $$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
 NDVImin is the minimum NDVI value a pixel holds in a single image
 NDVImin is the maximum NDVI value a pixel holds in a single image
@@ -39,24 +40,30 @@ NDVImin is the maximum NDVI value a pixel holds in a single image
 Land Surface Temperature is the radiative temperature / intensity of the land surface
 
 The mathematical expression for LST is:
+
 $$ LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) ) $$
 **BT** is brighness Temperature in celcius and is mathematically expressed as:
+
 $$ BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15 $$
 where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 
 **TOA** (Top of Atmosphere) Reflectance is a unitless measurement which provides the ratio of radiation reflected to the incident solar radiation on a given surface.
 
 It is mathematically expressed as:
+
 $$ TOA = ML * TIR + Al $$
 where ML and Al are landsat 8 constants 3.42E-4 and 0.1 respectively.
 
 **p** is mathematically expressed as:
+
 $$ p = hc/A $$
 where h, c and a are plank's constant, speed of light and boltzmann constant respectively
 
-**E** is emissivity of the land surface and is mathematically expressed as:<br>
+**E** is emissivity of the land surface and is mathematically expressed as:
+
 $$ ( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C $$
 where:
+
 $$ Ev (Vegitation Emissivity) of location = 0.986 $$
 $$ Es (Soil Emissivity) of location = 0.973 $$
 $$ C (topography factor) of location = 0.0001 $$
