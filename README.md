@@ -22,8 +22,7 @@ Healthy vegetation absorbs red-light energy to fuel photosynthesis and create ch
 The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 corresponds to a very healthy plant.
 
 The mathematical expression for NDVI is:
-$$ NDVI = (NIR - RED) / (NIR + RED) $$
-
+$$ NDVI = (NIR - RED)/(NIR + RED) $$
 
 
 ### PV (Portion of Vegetation):
