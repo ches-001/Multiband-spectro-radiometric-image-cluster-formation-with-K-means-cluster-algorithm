@@ -1,8 +1,5 @@
 # Multi-band Spectro Radiomertric Image Analysis with K-means Cluster Algorithm
 
-$$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
-
-
 Multi-band Spectro Radiomertric images are images comprising of several channels / bands which hold information on band energy in each pixel.
 The most common multi band channels are the RGB (Red Green Blue) channels of the visible light spectrum.
 
@@ -17,6 +14,9 @@ These centroids are stored in the "ouput" folder and will be futher studied to l
 
 
 ## Features
+
+$$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
+
 
 ### NDVI (Normalized Differential Vegetative Index):
 The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
