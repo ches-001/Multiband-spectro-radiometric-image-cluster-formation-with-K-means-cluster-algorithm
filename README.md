@@ -25,6 +25,7 @@ The mathematical expression for NDVI is:
 
 $$ NDVI = (NIR - RED)/(NIR + RED) $$
 
+<br><br><br>
 
 ### PV (Portion of Vegetation):
 Portion of Vegetation is the ratio of the vertical projection area of vegetation on the ground to the total vegetation area
@@ -35,6 +36,7 @@ $$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
 NDVImin is the minimum NDVI value a pixel holds in a single image
 NDVImin is the maximum NDVI value a pixel holds in a single image
 
+<br><br><br>
 
 
 ### LST (Land Surface Temperature):
@@ -43,9 +45,11 @@ Land Surface Temperature is the radiative temperature / intensity of the land su
 The mathematical expression for LST is:
 
 $$ LST = BT / ( 1 + ( ( kn * BT / p ) * np.log(E) ) ) $$
+
 **BT** is brighness Temperature in celcius and is mathematically expressed as:
 
 $$ BT = (K2 / np.log( ( K1 / TOA ) + 1 )) - 273.15 $$
+
 where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 
 **TOA** (Top of Atmosphere) Reflectance is a unitless measurement which provides the ratio of radiation reflected to the incident solar radiation on a given surface.
@@ -53,16 +57,19 @@ where K1 and K2 are landsat 8 constants 774.8853 and 1321.0789 respectively
 It is mathematically expressed as:
 
 $$ TOA = ML * TIR + Al $$
+
 where ML and Al are landsat 8 constants 3.42E-4 and 0.1 respectively.
 
 **p** is mathematically expressed as:
 
 $$ p = hc/A $$
+
 where h, c and a are plank's constant, speed of light and boltzmann constant respectively
 
 **E** is emissivity of the land surface and is mathematically expressed as:
 
 $$ ( Ev * PV * Rv ) + ( Es * ( 1 - PV ) * Rs ) + C $$
+
 where:
 
 $$ Ev (Vegitation Emissivity) of location = 0.986 $$
@@ -71,7 +78,7 @@ $$ C (topography factor) of location = 0.0001 $$
 $$ Rv = (0.92762 + (0.07033*PV)) $$
 $$ Rs = (0.99782 + (0.05362 * PV)) $$
 
-
+<br><br><br>
 
 ## Setup
 clone the repository and download the 'requirement.txt' files, then open terminal in the working directory and  type <strong>'pip install -r requirements.txt'<strong> to install all the requirements for this project.
