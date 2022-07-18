@@ -23,7 +23,7 @@ The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 cor
 
 The mathematical expression for NDVI is:
 $$ NDVI = (NIR - RED) / (NIR + RED) $$
-
+<br><br><br>
 
 
 ### PV (Portion of Vegetation):
@@ -64,7 +64,7 @@ $$ Ev (Vegitation Emissivity) of location = 0.986 $$
 $$ Es (Soil Emissivity) of location = 0.973 $$
 $$ C (topography factor) of location = 0.0001 $$
 $$ Rv = (0.92762 + (0.07033*PV)) $$
-$$ Rs = (0.99782 + (0.05362*PV)) $$
+$$ Rs = (0.99782 + (0.05362 * PV)) $$
 <br><br><br>
 
 
