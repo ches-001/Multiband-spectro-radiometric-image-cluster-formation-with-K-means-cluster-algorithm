@@ -15,14 +15,11 @@ These centroids are stored in the "ouput" folder and will be futher studied to l
 
 ## Features
 
-$$ PV = (NDVI - NDVImin) / (NDVImin + NDVImax) $$
-
-
-### NDVI (Normalized Differential Vegetative Index):
-The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.<br>
-It is basically how much RED light energy from the visible light spectrum is absorbed by the plant and how much NIR (near-infrared rays) it emmits.<br>
+### NDVI (Normalized Differential Vegetative Index)
+The Normalized Differential Vegetative Index is a metric for checking the presence and health of a vegetation in a given region.
+It is basically how much RED light energy from the visible light spectrum is absorbed by the plant and how much NIR (near-infrared rays) it emmits.
 Healthy vegetation absorbs red-light energy to fuel photosynthesis and create chlorophyll, and a plant with more chlorophyll will reflect more near-infrared energy than an unhealthy plant.
-The NDVI ranges from -1 to 1, -1 corresponds to a very unhealthy plant and 1 corresponds to a very healthy plant.
+The NDVI ranges from -1 to 1. -1 corresponds to a very unhealthy plant and 1 corresponds to a very healthy plant.
 
 The mathematical expression for NDVI is:
 $$ NDVI = (NIR - RED)/(NIR + RED) $$
