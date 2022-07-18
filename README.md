@@ -67,19 +67,5 @@ $$ Rv = (0.92762 + (0.07033*PV)) $$
 $$ Rs = (0.99782 + (0.05362 * PV)) $$
 <br><br><br>
 
-
-
-## Dependencies
-
-<li>Rasterio</li>
-<li>Numpy</li>
-<li>Pandas</li>
-<li>Sklearn</li>
-<li>Pickle</li>
-</ul>
-<br><br><br>
-
-
-
 ## Setup
 clone the repository and download the 'requirement.txt' files, then open terminal in the working directory and  type <strong>'pip install -r requirements.txt'<strong> to install all the requirements for this project.
